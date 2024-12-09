@@ -18,7 +18,7 @@ const MainLayout = () => {
       <nav className="w-11/12 mx-auto py-1">
         <Navbar />
       </nav>
-      <div className="py-5">
+      <div className="pt-5">
         <div className="w-11/12 mx-auto max-w-6xl">
           <Outlet />
         </div>

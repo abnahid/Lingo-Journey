@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { RiVoiceAiFill } from "react-icons/ri";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { useSpeechSynthesis } from "react-speech-kit";
 
@@ -154,15 +153,11 @@ const Lesson = () => {
               </p>
               <p>
                 <strong className="text-blue-700">When to Say:</strong>{" "}
-                {modalData.when_to_say}
+                <span>{modalData.when_to_say}</span>
               </p>
               <p>
                 <strong className="text-blue-700">Example:</strong>{" "}
                 {modalData.example}{" "}
-                <RiVoiceAiFill
-                  className="mr-2"
-                  onClick={() => pronounceWord(modalData.example)}
-                />
               </p>
             </div>
 
